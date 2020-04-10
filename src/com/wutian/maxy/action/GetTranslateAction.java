@@ -51,19 +51,22 @@ public class GetTranslateAction extends AnAction {
                 "Place Input Output Path:",
                 "Output Path:",
                 Messages.getQuestionIcon());
-        @SystemIndependent String basePath = project.getBasePath();
-        File file = new File(outPutPath);
-        if (!file.exists()) {
-            file = new File(basePath + File.pathSeparatorChar + "Translate");
-            if (file.exists()) {
-                file.mkdir();
-            }
+        File projectFile = new File(project.getBasePath());
+        File translateTargetFile = new File(outPutPath);
+        if (!translateTargetFile.exists())
+            translateTargetFile = projectFile;
+
+        if (!translateTargetFile.exists() || !translateTargetFile.isDirectory())
+            throw new RuntimeException("Output Path not exist : " + translateTargetFile.getAbsolutePath() + "    " + translateTargetFile.isDirectory());
+
+        if (!translateTargetFile.getName().contains("Translate")) {
+            translateTargetFile = new File(translateTargetFile, project.getName() + "_Translate");
+            translateTargetFile.mkdir();
         }
 
-        if (!file.exists())
-            throw new RuntimeException("Output Path not exist : " + file.getAbsolutePath());
-
-        GetTranslateHelper translateHelper = new GetTranslateHelper(new File(basePath), file);
+        System.out.println("--------------- Out Path: " + translateTargetFile.getAbsolutePath());
+//        projectFile = new File("/Users/maxy/Android/workspace/SHAREit");
+        GetTranslateHelper translateHelper = new GetTranslateHelper(projectFile, translateTargetFile);
         translateHelper.startGet();
     }
 }
