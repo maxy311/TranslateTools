@@ -1,6 +1,5 @@
 package com.wutian.maxy.jdom.entity;
 
-import com.trilead.ssh2.log.Logger;
 import org.jdom.Attribute;
 import org.jdom.Element;
 
@@ -8,13 +7,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class StrEntity {
+public class StrEntity extends BaseEntity {
     public static final String ATTRIBUTE_NAME = "name";
     public static final String ATTRIBUTE_TRANSLATABLE = "translatable";
     public static final String ATTRIBUTE_TRANSLATE = "translate";
 
-    public static final String FORMAT_STRING = "    <%s name=\"%s\">%s</%s>";
-    public static final String FORMAT_STRING_NOT_TRANSLATE = "    <%s name=\"%s\" translatable=\"false\">%s</%s>";
+    public static final String FORMAT_STRING = "<%s name=\"%s\">%s</%s>";
+    public static final String FORMAT_STRING_NOT_TRANSLATE = "<%s name=\"%s\" translatable=\"false\">%s</%s>";
 
     private Element element;
     private String tagName;
@@ -24,7 +23,9 @@ public class StrEntity {
 
     private Map<String, String> attributeMap;
     private boolean hasSubElement = false;
+
     public StrEntity(Element element) {
+        super(EntityType.Element);
         this.element = element;
         tagName = element.getName();
         value = parseElementValue(element);
@@ -78,6 +79,7 @@ public class StrEntity {
         return value;
     }
 
+    @Override
     public boolean isNeedTranslate() {
         return isNeedTranslate;
     }
@@ -92,6 +94,7 @@ public class StrEntity {
         return !attributeMap.containsKey(ATTRIBUTE_TRANSLATABLE) && !attributeMap.containsKey(ATTRIBUTE_TRANSLATE);
     }
 
+    @Override
     public String getLineText() {
         if (isNeedTranslate())
             return String.format(FORMAT_STRING, tagName, stringKey, hasSubElement ? "\n" + value + "\n    " : value, tagName);
