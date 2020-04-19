@@ -158,7 +158,7 @@ public class PrintTranslateToFile {
                 for (StrEntity strEntity : list) {
                     if (!strEntity.isNeedTranslate())
                         continue;
-                    bw.write(strEntity.getLineText());
+                    bw.write("    " + strEntity.getLineText());
                     bw.newLine();
                     bw.flush();
                 }
