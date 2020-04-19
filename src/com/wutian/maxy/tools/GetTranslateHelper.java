@@ -14,11 +14,17 @@ public class GetTranslateHelper {
     private File projectFile;
     private String projectName;
     private String basePath;
-    public GetTranslateHelper(File projectFile, File outFile) {
+    private String lastTag;
+    private String compareDir;
+
+    public GetTranslateHelper(File projectFile, File outFile, String lastTag, String compareDir) {
         this.outFile = outFile;
         this.projectFile = projectFile;
         projectName = projectFile.getName();
         basePath = projectFile.getAbsolutePath();
+
+        this.lastTag = lastTag;
+        this.compareDir = compareDir;
     }
 
     public void startGet() {
@@ -31,15 +37,19 @@ public class GetTranslateHelper {
 
         //read values-XX file to map
         Map<String, Map<String, Map<String, StrEntity>>> valuesXXMap = new HashMap<>();
-        readStringsToMap(valuesXXMap, projectFile, "values-ar");
+        readStringsToMap(valuesXXMap, projectFile, isEmptyStr(compareDir) ? compareDir : "values-ar");
 
         //read last tag values file to map
-        Map<String, Map<String, Map<String, StrEntity>>> preValueMap = new HashMap<>();
+        Map<String, Map<String, Map<String, StrEntity>>> preValueMap = null;
+        if (isEmptyStr(lastTag)) {
+            preValueMap = new HashMap<>();
+        }
 
 
         PrintTranslateToFile printTranslateToFile = new PrintTranslateToFile(projectFile, outFile);
         printTranslateToFile.printToFile(valuesMap, valuesXXMap, preValueMap);
     }
+
 
     private void checkOutputFile() {
         if (outFile == null || !outFile.exists())
@@ -74,5 +84,9 @@ public class GetTranslateHelper {
             return module.substring(1, module.indexOf("src") - 1);
         else
             return module.substring(1, module.indexOf("res") - 1);
+    }
+
+    private boolean isEmptyStr(String str) {
+        return str == null || str.trim().length() == 0;
     }
 }

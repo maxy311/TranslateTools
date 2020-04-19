@@ -5,6 +5,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
+import com.wutian.maxy.dialog.SampleDialogWrapper;
 import com.wutian.maxy.tools.GetTranslateHelper;
 import com.wutian.maxy.tools.TranslateHelper;
 import org.jetbrains.annotations.SystemIndependent;
@@ -47,12 +48,18 @@ public class GetTranslateAction extends AnAction {
     }
 
     private void getTranslate(Project project) {
-        String outPutPath = Messages.showInputDialog(project,
-                "Place Input Output Path:",
-                "Output Path:",
-                Messages.getQuestionIcon());
+        SampleDialogWrapper sampleDialogWrapper = new SampleDialogWrapper();
+        sampleDialogWrapper.showAndGet();
+        String translatePath = sampleDialogWrapper.getPath();
+        String lastTag = sampleDialogWrapper.getLastTag();
+        String compareDir = sampleDialogWrapper.getCompareDir();
+//        String outPutPath = Messages.showInputDialog(project,
+//                "Place Input Output Path:",
+//                "Output Path:",
+//                Messages.getQuestionIcon());
+
         File projectFile = new File(project.getBasePath());
-        File translateTargetFile = new File(outPutPath);
+        File translateTargetFile = new File(translatePath);
         if (!translateTargetFile.exists())
             translateTargetFile = projectFile;
 
@@ -64,9 +71,9 @@ public class GetTranslateAction extends AnAction {
             translateTargetFile.mkdir();
         }
 
-        System.out.println("--------------- Out Path: " + translateTargetFile.getAbsolutePath());
 //        projectFile = new File("/Users/maxy/Android/workspace/SHAREit");
-        GetTranslateHelper translateHelper = new GetTranslateHelper(projectFile, translateTargetFile);
+        System.out.println(translateTargetFile.getAbsolutePath() +"         " + lastTag +"         " + compareDir);
+        GetTranslateHelper translateHelper = new GetTranslateHelper(projectFile, translateTargetFile, lastTag, compareDir);
         translateHelper.startGet();
     }
 }

@@ -18,7 +18,7 @@ public class SampleDialogWrapper extends DialogWrapper {
 
     @Override
     protected JComponent createCenterPanel() {
-        JPanel dialogPanel = new JPanel(new BorderLayout());
+        JPanel dialogPanel = new JPanel();
 
         JLabel pathLabel = new JLabel("输入输出路径:");
         pathLabel.setLocation(0, 0);
@@ -40,6 +40,7 @@ public class SampleDialogWrapper extends DialogWrapper {
         JLabel compareName = new JLabel("比较目录:");
         compareName.setLocation(0, 2 * y);
         compareText = new JTextField();
+        compareText.setText("values-ar");
         compareText.setPreferredSize(new Dimension(200, 25));
         compareText.setLocation(50, 2 * y);
         dialogPanel.add(compareName);
