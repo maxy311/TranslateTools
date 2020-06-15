@@ -13,7 +13,7 @@ import java.util.*;
 
 
 public class PrintTranslateUtils {
-    public static final String WRITE_FIELNMAE_SPLIT = "    //-----------------------------";
+    public static final String WRITE_FILENAME_SPLIT = "    //-----------------------------";
 
     private File outFile;
     private CompareBean valueCompareBean;
@@ -145,14 +145,14 @@ public class PrintTranslateUtils {
             bw.write("<?xml version=\"1.0\" encoding=\"utf-8\"?>\n" + "<resources>\n");
 
             for (String fileName : translateData.keySet()) {
-                bw.write(WRITE_FIELNMAE_SPLIT + fileName);
+                bw.write(WRITE_FILENAME_SPLIT + fileName);
                 bw.newLine();
                 bw.flush();
                 List<StrEntity> list = translateData.get(fileName);
                 for (StrEntity strEntity : list) {
                     if (!strEntity.isNeedTranslate())
                         continue;
-                    bw.write("    " + strEntity.getLineText());
+                    bw.write(strEntity.getLineText());
                     bw.newLine();
                     bw.flush();
                 }

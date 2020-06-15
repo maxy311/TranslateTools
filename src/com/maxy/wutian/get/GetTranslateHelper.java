@@ -4,6 +4,7 @@ package com.maxy.wutian.get;
 import com.maxy.wutian.bean.CompareBean;
 import com.maxy.wutian.bean.ModuleBean;
 import com.maxy.wutian.filter.StringFileFilter;
+import com.maxy.wutian.utils.ModulePareHelper;
 import com.maxy.wutian.utils.ShellUtils;
 
 import java.io.File;
@@ -64,24 +65,10 @@ public class GetTranslateHelper {
 
             if (!isValuesFile(file, valueDir))
                 return;
-            String fileModule = getFileModule(file);
+            String fileModule = ModulePareHelper.parseFileToModuleName(projectFile, file);
             ModuleBean moduleBean = compareBean.getModuleBean(fileModule);
             moduleBean.parseFile(file);
         }
-    }
-
-    private String getFileModule(File file) {
-        String parent = file.getParent();
-        String module = parent.replace(projectFile.getAbsolutePath(), "");
-        if (module.contains("\\"))
-            module = module.replaceAll("\\\\", "_");
-        else if (module.contains("/"))
-            module = module.replaceAll("/", "_");
-
-        if (module.contains("src"))
-            return module.substring(1, module.indexOf("src") - 1);
-        else
-            return module.substring(1, module.indexOf("res") - 1);
     }
 
     private boolean isValuesFile(File file, String valueDir) {
@@ -94,7 +81,7 @@ public class GetTranslateHelper {
         if (projectFile == null || !projectFile.exists() || outFile == null)
             throw new RuntimeException("GetTranslateHelper projectFile not exist :" + projectFile + "     " + outFile);
 
-        if (!outFile.getName().equals("Translate"))
+        if (!outFile.getName().contains("Translate"))
             outFile = new File(outFile, projectName + "_Translate");
 
         if (!outFile.exists())

@@ -1,4 +1,4 @@
-package com.wutian.maxy.dialog;
+package com.maxy.wutian.dialog;
 
 import com.intellij.openapi.ui.DialogWrapper;
 

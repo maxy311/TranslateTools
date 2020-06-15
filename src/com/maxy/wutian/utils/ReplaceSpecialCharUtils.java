@@ -1,4 +1,4 @@
-package com.wutian.maxy.tools;
+package com.maxy.wutian.utils;
 
 public class ReplaceSpecialCharUtils {
 

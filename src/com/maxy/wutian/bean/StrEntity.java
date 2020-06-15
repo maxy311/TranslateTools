@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StrEntity {
+public class StrEntity implements ILineEntity {
     private String lineStr;
     private String tagName;
     private String stringKey;
@@ -31,6 +31,7 @@ public class StrEntity {
         return value;
     }
 
+    @Override
     public boolean isNeedTranslate() {
         return isNeedTranslate;
     }
@@ -45,6 +46,7 @@ public class StrEntity {
         return !trimLineStr.contains("translatable=\"false\"") && !trimLineStr.contains("translate=\"false\"");
     }
 
+    @Override
     public String getLineText() {
         return lineStr;
     }

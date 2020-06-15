@@ -1,18 +1,15 @@
-package com.wutian.maxy.action;
+package com.maxy.wutian.action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
-import com.wutian.maxy.dialog.SampleDialogWrapper;
-import com.wutian.maxy.tools.GetTranslateHelper;
-import com.wutian.maxy.tools.TranslateHelper;
+import com.maxy.wutian.dialog.SampleDialogWrapper;
+import com.maxy.wutian.get.GetTranslateHelper;
 import org.jetbrains.annotations.SystemIndependent;
 
-import javax.swing.*;
 import java.io.File;
-import java.io.IOException;
 
 public class GetTranslateAction extends AnAction {
 
@@ -74,6 +71,6 @@ public class GetTranslateAction extends AnAction {
 //        projectFile = new File("/Users/maxy/Android/workspace/SHAREit");
         System.out.println(translateTargetFile.getAbsolutePath() +"         " + lastTag +"         " + compareDir);
         GetTranslateHelper translateHelper = new GetTranslateHelper(projectFile, translateTargetFile, lastTag, compareDir);
-        translateHelper.startGet();
+        translateHelper.startGetTranslate();
     }
 }

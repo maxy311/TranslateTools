@@ -1,28 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c77c0ec2-f3c7-4245-b342-bdced6143167" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/action/AddTranslateAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/dialog/SampleDialogWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/CommentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/LineBreak.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/utils/FileUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/tools/ReplaceSpecialCharUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/tools/add/AddHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/tools/add/AddTranslateHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/tools/add/AddTranslateTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/wutian/maxy/tools/task/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxy/wutian/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/maxy/wutian/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TranslateTools.jar" beforeDir="false" afterPath="$PROJECT_DIR$/TranslateTools.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TranslateTools.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jdom-2.0.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TranslateTools/META-INF/TranslateTools.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TranslateTools/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TranslateTools/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TranslateTools/com/wutian/maxy/action/GetTranslateAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TranslateTools/com/wutian/maxy/action/GetTranslateAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TranslateTools/com/wutian/maxy/action/TranslatePopAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TranslateTools/com/wutian/maxy/action/TranslatePopAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TranslateTools/test.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TranslateTools/com/wutian/maxy/action/GetTranslateAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TranslateTools/com/wutian/maxy/action/TranslatePopAction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/action/TranslatePopAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wutian/maxy/action/TranslatePopAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/FileReaderEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/FileReaderEx.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/StrEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/StrEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maxy/wutian/TestJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/TestJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maxy/wutian/add/SplitHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/add/SplitHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maxy/wutian/get/GetTranslateHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/get/GetTranslateHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/maxy/wutian/utils/ModulePareHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/utils/ModulePareHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/action/AddTranslateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/action/AddTranslateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/action/GetTranslateAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/action/GetTranslateAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/action/TranslatePopAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/action/TranslatePopAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/dialog/SampleDialogWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/maxy/wutian/dialog/SampleDialogWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/FileReaderEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/CommentEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/LineBreak.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/entity/StrEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/utils/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/jdom/utils/StrLineUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/GetTranslateHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/PrintTranslateToFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/ReplaceSpecialCharUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/TestJava.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/TranslateHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/add/AddHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/add/AddTranslateHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/add/AddTranslateTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/fileter/FileFiltersEx.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/fileter/StringFileFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/wutian/maxy/tools/task/Task.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +90,15 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/wutian/maxy/tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/com/maxy/wutian/utils" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -71,18 +107,52 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\TranslateTools\src\com\maxy\wutian\utils" />
+      <recent name="E:\workspace\TranslateTools\src\com\maxy\wutian" />
+      <recent name="E:\workspace\TranslateTools\src\com\wutian\maxy\tools\fileter" />
+      <recent name="E:\workspace\TranslateTools\src\com" />
       <recent name="$PROJECT_DIR$/src/com/wutian/maxy/tools" />
-      <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.maxy.wutian.utils" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.maxy.wutian" />
     </key>
   </component>
-  <component name="RunManager" selected="Plugin.Plugin">
+  <component name="RunManager" selected="Application.TestJava (1)">
+    <configuration name="TestJava (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.maxy.wutian.TestJava" />
+      <module name="TranslateTools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maxy.wutian.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.wutian.maxy.TestJava" />
       <module name="TranslateTools" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wutian.maxy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestJava2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.maxy.wutian.TestJava2" />
+      <module name="TranslateTools" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.maxy.wutian.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,7 +194,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.wutian.maxy.jdom.entity in TranslateTools" />
+        <item itemvalue="Application.TestJava (1)" />
+        <item itemvalue="Application.TestJava2" />
         <item itemvalue="Application.TestJava" />
       </list>
     </recent_temporary>
@@ -132,58 +203,96 @@
   <component name="SvnConfiguration">
     <configuration />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="240" y="41" key="#Project_Structure" timestamp="1586424711754">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state x="360" y="27" key="#Project_Structure" timestamp="1592056498634">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="360" y="27" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1592056498634" />
     <state x="240" y="41" key="#Project_Structure/0.23.1280.705@0.23.1280.705" timestamp="1586424711754" />
-    <state x="453" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1586833919858">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592217283057">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592217283057" />
+    <state x="680" y="102" key="#com.intellij.ide.util.MemberChooser" timestamp="1592212466521">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="680" y="102" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592212466521" />
     <state x="453" y="92" key="#com.intellij.ide.util.MemberChooser/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586833919858" />
     <state x="453" y="92" key="#com.intellij.ide.util.MemberChooser/0.23.1280.705@0.23.1280.705" timestamp="1586428292597" />
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592054134792">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592054134792" />
+    <state x="715" y="222" key="#xdebugger.evaluate" timestamp="1592059394855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="715" y="222" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1592059394855" />
     <state x="100" y="123" width="1080" height="505" key="DiffContextDialog" timestamp="1586491044564">
       <screen x="0" y="23" width="1280" height="705" />
     </state>
     <state x="100" y="123" width="1080" height="505" key="DiffContextDialog/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586491044564" />
-    <state width="1238" height="159" key="GridCell.Tab.0.bottom" timestamp="1586861161161">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1592223472074">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1592223472074" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1592224308598">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592224308598" />
     <state width="1238" height="159" key="GridCell.Tab.0.bottom/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161161" />
     <state width="1280" height="216" key="GridCell.Tab.0.bottom/0.23.1280.705@0.23.1280.705" timestamp="1586436492860" />
-    <state width="1238" height="159" key="GridCell.Tab.0.center" timestamp="1586861161159">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1592224308598">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592224308598" />
     <state width="1238" height="159" key="GridCell.Tab.0.center/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161159" />
     <state width="1280" height="216" key="GridCell.Tab.0.center/0.23.1280.705@0.23.1280.705" timestamp="1586436492859" />
-    <state width="1238" height="159" key="GridCell.Tab.0.left" timestamp="1586861161158">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1592224308598">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592224308598" />
     <state width="1238" height="159" key="GridCell.Tab.0.left/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161158" />
     <state width="1280" height="216" key="GridCell.Tab.0.left/0.23.1280.705@0.23.1280.705" timestamp="1586436492859" />
-    <state width="1238" height="159" key="GridCell.Tab.0.right" timestamp="1586861161160">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1592224308598">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="281" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592224308598" />
     <state width="1238" height="159" key="GridCell.Tab.0.right/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161160" />
     <state width="1280" height="216" key="GridCell.Tab.0.right/0.23.1280.705@0.23.1280.705" timestamp="1586436492859" />
-    <state width="1238" height="159" key="GridCell.Tab.1.bottom" timestamp="1586861161163">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state width="1877" height="459" key="GridCell.Tab.1.bottom" timestamp="1592223071883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="459" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1592223071883" />
     <state width="1238" height="159" key="GridCell.Tab.1.bottom/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161163" />
     <state width="1280" height="216" key="GridCell.Tab.1.bottom/0.23.1280.705@0.23.1280.705" timestamp="1586436492861" />
-    <state width="1238" height="159" key="GridCell.Tab.1.center" timestamp="1586861161162">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state width="1877" height="459" key="GridCell.Tab.1.center" timestamp="1592223071883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="459" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1592223071883" />
     <state width="1238" height="159" key="GridCell.Tab.1.center/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161162" />
     <state width="1280" height="216" key="GridCell.Tab.1.center/0.23.1280.705@0.23.1280.705" timestamp="1586436492860" />
-    <state width="1238" height="159" key="GridCell.Tab.1.left" timestamp="1586861161161">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state width="1877" height="459" key="GridCell.Tab.1.left" timestamp="1592223071883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="459" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1592223071883" />
     <state width="1238" height="159" key="GridCell.Tab.1.left/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161161" />
     <state width="1280" height="216" key="GridCell.Tab.1.left/0.23.1280.705@0.23.1280.705" timestamp="1586436492860" />
-    <state width="1238" height="159" key="GridCell.Tab.1.right" timestamp="1586861161162">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state width="1877" height="459" key="GridCell.Tab.1.right" timestamp="1592223071883">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="459" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1592223071883" />
     <state width="1238" height="159" key="GridCell.Tab.1.right/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861161162" />
     <state width="1280" height="216" key="GridCell.Tab.1.right/0.23.1280.705@0.23.1280.705" timestamp="1586436492861" />
     <state width="1238" height="291" key="GridCell.Tab.2.bottom" timestamp="1586855050477">
@@ -206,9 +315,14 @@
     </state>
     <state width="1238" height="291" key="GridCell.Tab.2.right/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586855050476" />
     <state width="1280" height="216" key="GridCell.Tab.2.right/0.23.1280.705@0.23.1280.705" timestamp="1586436492862" />
-    <state x="141" y="23" width="997" height="705" key="SettingsEditor" timestamp="1586485062438">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state x="739" y="221" key="RollbackChangesDialog" timestamp="1592211138526">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="739" y="221" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592211138526" />
+    <state x="212" y="0" width="997" height="705" key="SettingsEditor" timestamp="1592223475256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="212" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592223475256" />
     <state x="141" y="23" width="997" height="705" key="SettingsEditor/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586485062438" />
     <state x="141" y="23" width="997" height="705" key="SettingsEditor/0.23.1280.705@0.23.1280.705" timestamp="1586424628327" />
     <state x="490" y="298" key="VCS.ChangelistChooser" timestamp="1586487238008">
@@ -219,18 +333,25 @@
       <screen x="0" y="23" width="1280" height="705" />
     </state>
     <state x="317" y="208" key="com.intellij.ide.util.TipDialog/0.23.1280.705@0.23.1280.705" timestamp="1586416340223" />
-    <state x="378" y="135" key="extract.method.dialog" timestamp="1586417633946">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state x="567" y="165" key="extract.method.dialog" timestamp="1592222963929">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="567" y="165" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592222963929" />
     <state x="378" y="135" key="extract.method.dialog/0.23.1280.705@0.23.1280.705" timestamp="1586417633946" />
-    <state x="221" y="23" width="837" height="705" key="find.popup" timestamp="1586525309199">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state x="332" y="0" width="1256" height="1040" key="find.popup" timestamp="1592057294025">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="332" y="0" width="1256" height="1040" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592057294025" />
     <state x="221" y="23" width="837" height="705" key="find.popup/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586525309199" />
     <state x="221" y="23" width="837" height="825" key="find.popup/0.23.1280.705@0.23.1280.705" timestamp="1586417008900" />
-    <state x="305" y="52" width="670" height="676" key="search.everywhere.popup" timestamp="1586861159311">
-      <screen x="0" y="23" width="1280" height="705" />
+    <state x="661" y="276" key="refactoring.ChangeSignatureDialog" timestamp="1592213244331">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="661" y="276" key="refactoring.ChangeSignatureDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592213244331" />
+    <state x="458" y="43" width="1005" height="998" key="search.everywhere.popup" timestamp="1592212976131">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="458" y="43" width="1005" height="998" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1592212976131" />
     <state x="305" y="52" width="670" height="676" key="search.everywhere.popup/0.23.1280.705/1280.23.1920.1057@0.23.1280.705" timestamp="1586861159311" />
   </component>
   <component name="XDebuggerManager">
@@ -245,6 +366,21 @@
           <url>file://$PROJECT_DIR$/src/com/wutian/maxy/jdom/FileReaderEx.java</url>
           <line>51</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/maxy/wutian/get/PrintTranslateUtils.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/maxy/wutian/TestJava2.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/maxy/wutian/add/AddTaskManager.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

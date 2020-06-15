@@ -1,10 +1,8 @@
-package com.wutian.maxy.action;
+package com.maxy.wutian.action;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
-import com.intellij.openapi.ui.popup.ComponentPopupBuilder;
-import com.intellij.openapi.ui.popup.JBPopupFactory;
-import com.wutian.maxy.dialog.SampleDialogWrapper;
+import com.maxy.wutian.dialog.SampleDialogWrapper;
 import org.jetbrains.annotations.NotNull;
 
 import java.awt.event.KeyEvent;
