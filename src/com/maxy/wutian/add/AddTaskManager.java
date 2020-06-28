@@ -75,7 +75,7 @@ public class AddTaskManager implements AddTranslateTask.AddTaskListener {
 
     private void readValuesFile(File translateFile, File originDir) {
         String translateFileName = translateFile.getName();
-        String mapKey = originDir.getParentFile().getAbsolutePath() + "______" + translateFileName;
+        String mapKey = getMapKey(originDir, translateFileName);
         if (mValuesData.containsKey(mapKey)) {
             System.out.println(mapKey + "                          " + translateFile.getAbsolutePath());
             return;
@@ -99,14 +99,14 @@ public class AddTaskManager implements AddTranslateTask.AddTaskListener {
     @Override
     public void doAddTranslate(File translateFile, File originDir) {
         File valueXXFile = new File(originDir, translateFile.getName());
-        if (valueXXFile.exists()) {
+        if (!valueXXFile.exists()) {
             try {
                 valueXXFile.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-        List<ILineEntity> lines = mValuesData.get(translateFile.getName());
+        List<ILineEntity> lines = mValuesData.get(getMapKey(originDir, translateFile.getName()));
         if (lines.isEmpty())
             throw new RuntimeException("can not get values file: " + translateFile.getName());
 
@@ -124,10 +124,14 @@ public class AddTaskManager implements AddTranslateTask.AddTaskListener {
                             line = ReplaceSpecialCharUtils.replaceSpecialChar(line);
                         } else if (valueXXMap.containsKey(stringKey)) {
                             line = valueXXMap.get(stringKey).getLineText();
-                        } else if (!strEntity.isNeedTranslate())
-                            continue;
+                        } else
+                            line = null;
                     }
+                    if (line == null)
+                        continue;
                     bw.write(line);
+                    bw.newLine();
+                    bw.flush();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
@@ -174,5 +178,17 @@ public class AddTaskManager implements AddTranslateTask.AddTaskListener {
                 }
             }
         }).start();
+    }
+
+    private String getMapKey(File originDir, String fileName) {
+        if (!originDir.getAbsolutePath().contains("res"))
+            System.out.println(originDir.getAbsolutePath());
+        return getResPath(originDir)  + "______" + fileName;
+    }
+
+    private String getResPath(File originDir) {
+        if (originDir.getName().equals("res"))
+            return originDir.getAbsolutePath();
+        return getResPath(originDir.getParentFile());
     }
 }
